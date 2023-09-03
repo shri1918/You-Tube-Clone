@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    display: flex;
+    background-color: #212121;
+    height: 56px;
+}
+.logo{
+    width: 120px;
+    height: 56px;
+    margin-left: 16px;
+    display: flex;
+}
+.logo i{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 8px;
+    gap: 10px;
+}
+.logo img{
+    margin-left: 40px;
+    margin-top: 14px;
+    padding: 18px, 14px, 18px, 16px;
+}
+.searchbar{
+    width: 470px;
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    margin-left: 425px;
+}
+.searchbar input{
+    width: 330px;
+    margin-top: 1px;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border: none;
+}
+.subutton{
+    width: 64px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    align-items: center;
+    /* border-radius: 25px; */
+    margin-top: 1px;
+    justify-content: center;
+    background-color: rgb(203, 203, 203);
+}
+.subutton i{
+    justify-content: center;
+     margin-left: 8px; 
+     margin-top: -2px;
+}
+.button1{
+    text-align: center;
+    padding: 25%;  
+}
+.mick {
+    background-color: gray;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.mick i{
+    margin-top: 12px;
+    margin-left: 13px;
+    font-size: 18px;
+}
+.leftbar{
+    display: flex;
+    width: 260px;
+    height: 100vh;
+    background-color: #212121;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+    
+}
+.leftbar div{
+    margin-left: 20px;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.leftbar div a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+.main{
+    display: flex;
+}
+#cardContainer{
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.card:hover{
+    background-color: rgb(225, 225, 233);
+}
+#channel-logo{
+    border-radius: 50%;
+}
+.qw{
+    flex-wrap: wrap;
+}
+.qw p{
+    
+}

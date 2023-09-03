@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="burger"></div>
+        <div class="logo">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            <img src="Youtube-Logo.png" width="90px" height="20px">
+        </div>
+        <div class="searchbar">
+            <input type="text" id="searchinput"></input>
+            <button class="subutton" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass button1" style="color: #ffffff; "></i>
+            </button>
+            <div class="mick">
+                <i class="fa-solid fa-microphone" style="color: #ffffff; justify-content: center;"></i>
+            </div>
+        </div>
+        <div class="video-icon"></div>
+        <div class="bail-icon"></div>
+        <div class="notfication-icon"></div>
+        <div class="profile"></div>
+    </div>
+    <div class="main">
+        <sidebar class="leftbar">
+            <div style="margin-top: 10px;"><a style="color: #ffffff;">
+                <i class="fa-solid fa-house-chimney" id="funny-video" onclick=onNavItemClick(id)></i> Home</a>
+            </div>
+            <div>
+                <a style="color: #ffffff;"><i class="fa-solid fa-film"></i> Shorts</a>
+            </div>
+            <div><a style="color: #ffffff; ">
+                    <i class="fa-solid fa-subscript"></i> Subscriptions
+                </a></div>
+            <hr style="color: #ffffff;font-weight: 900;border: 3px solid white;">
+            <div style="margin-top: 10px;"><a href=""> <i class="fa-solid fa-bookmark"></i> Library</a></div>
+                <div><a href=""> <i class="fa-solid fa-clock-rotate-left"></i> History</a></div>
+           <div><a href="">  <i class="fa-solid fa-video"></i> Your video</a></div>
+          
+            <div><a href=""><i class="fa-regular fa-clock"> </i> Watch later</a></div>
+            <div><a href=""><i class="fa-solid fa-heart"></i> Liked video</a></div>
+        </sidebar>
+        <div id="cardContainer" class=" d-flex align-items-stretch gap-4" style="width: 100%;">
+            <!-- class="d-flex align-items-stretch gap-4" -->
+            
+        </div> 
+        
+          
+    </div>
+    <template id="temp">
+        <div class="card " style="width: 276px; height: 255px; margin-left: 15px;">
+            <img width="200px" height="150px" id="thumbnail" src="https://pbs.twimg.com/profile_images/428316729220276224/EdBZ2Kgp.jpeg" class="card-img-top" alt="...">
+            
+            <div class="card-body" >
+                <div class="qw" style="display: flex; ">
+                    <img width="36px" height="36px" src="" alt="" id="channel-logo">
+                    <p id="video_title" class="card-title"><b>Card title</b></p>
+                </div>
+                
+                <!-- <p id="news-desc" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p> -->
+                
+            </div>
+        </div>
+    </template>
+    <script src="index.js"></script>
+</body>
+
+</html>
