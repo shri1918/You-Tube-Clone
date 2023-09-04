@@ -113,7 +113,63 @@
 }
 .qw{
     flex-wrap: wrap;
+    display: flex;
+    flex-shrink: inherit;
 }
-.qw p{
+.qw span{
+    font-size: 10px;
+    flex-shrink: inherit;
+    margin-top: 0px;
+}
+
+@media (max-width :600px) {
+    .leftbar{
+        display: none;
+    }
+    .main{
+        width: 100vw;
+    }
+    .logo img{
+        margin-left: 0px;
+        width: 60px;
+        height: 20px;
+    }
+    .searchbar{
+        width: 90px;
+        height: 10px;
+        margin-left: 0px;
+        border-radius: 30px;
+    }
+    .subutton{
+       padding: 5px;
+    }
+    .button1 {
+        font-size: 15px;
+        margin-left: -5px;
+        padding: 5px;
+    }
+    .mick{
+        display: none;
+    }
+    #temp{
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        padding: 50%;
+    }
+    #cardContainer{
+        padding-left: 40px;
+    }
+  
+    .card2{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    .qw span{
+        font-size: 12px;
+        
+       /* margin-left: 50px;
+        margin-top: -40px; */
+    }
 }
